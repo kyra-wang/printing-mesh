@@ -1,0 +1,15 @@
+$(function(){
+  $(window).scroll(function(){
+	if($(window).scrollTop()>300){
+    	$(".action-left").animate({left:"-10px",opacity:"1"},1000);
+		$(".action-right").animate({right:"-10px",opacity:"1"},1000);
+	}
+	if($(window).scrollTop()>600){
+		$(".action-top").animate({top:"0",opacity:"1"},1000);
+		$(".action-down").animate({bottom:"0",opacity:"1"},1000);
+  	}
+	if($(window).scrollTop()>1280){
+	  $(".danru").fadeIn(1000);
+  	}
+  });
+});
